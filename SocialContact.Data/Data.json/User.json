@@ -1,0 +1,167 @@
+[
+  {
+    "firstname": "osazee",
+    "lastname": "imadonmwinyi",
+    "email": "osasfrank246@gmail.com",
+    "photoUrl": "avatar.png",
+    "PhoneNumbers": [
+      {
+        "Number": "08012836475",
+        "Type": 1
+      },
+      {
+        "Number": "08011494750",
+        "Type": 2
+      }
+    ],
+    "Socials": [
+      {
+        "Link": "https://facebook.com/osazee"
+      },
+      {
+        "Link": "https://linkedIn.com/osazee"
+      }
+    ],
+    "Address": {
+      "Street": "7 Asajon Way, Sangotedo",
+      "City": "Ajah",
+      "State": "Lagos",
+      "Country": "Nigeria",
+      "AddressType": 0
+
+    }
+  },
+  {
+    "firstname": "emeka",
+    "lastname": "ukwuoma",
+    "email": "emeka.ukwuoma@gmail.com",
+    "photoUrl": "avatar.png",
+    "PhoneNumbers": [
+      {
+        "Number": "08012836475",
+        "Type": 1
+      },
+      {
+        "Number": "08011494750",
+        "Type": 2
+      }
+    ],
+    "Socials": [
+      {
+        "Link": "https://facebook.com/emeka"
+      },
+      {
+        "Link": "https://linkedIn.com/emeka"
+      }
+    ],
+    "Address": {
+      "Street": "7 Asajon Way, Sangotedo",
+      "City": "Ajah",
+      "State": "Lagos",
+      "Country": "Nigeria",
+      "AddressType": 0
+
+    }
+
+  },
+  {
+    "firstname": "adedimola",
+    "lastname": "ogidan",
+    "email": "adedimola.ogidan@gmail.com",
+    "photoUrl": "avatar.png",
+    "PhoneNumbers": [
+      {
+        "Number": "08012836475",
+        "Type": 1
+      },
+      {
+        "Number": "08011494750",
+        "Type": 2
+      }
+    ],
+    "Socials": [
+      {
+        "Link": "https://facebook.com/adedimola"
+      },
+      {
+        "Link": "https://linkedIn.com/adedimola"
+      }
+    ],
+    "Address": {
+      "Street": "7 Asajon Way, Sangotedo",
+      "City": "Ajah",
+      "State": "Lagos",
+      "Country": "Nigeria",
+      "AddressType": 0
+
+    }
+
+  },
+  {
+    "firstname": "tolu",
+    "lastname": "omoseyin",
+    "email": "tolu.omoseyin@gmail.com",
+    "photoUrl": "avatar.png",
+    "PhoneNumbers": [
+      {
+        "Number": "08012836475",
+        "Type": 1
+      },
+      {
+        "Number": "08011494750",
+        "Type": 2
+      }
+    ],
+    "Socials": [
+      {
+        "Link": "https://facebook.com/omoseyin"
+      },
+      {
+        "Link": "https://linkedIn.com/omoseyin"
+      }
+    ],
+    "Address": {
+      "Street": "7 Asajon Way, Sangotedo",
+      "City": "Ajah",
+      "State": "Lagos",
+      "Country": "Nigeria",
+      "AddressType": 0
+
+    }
+
+  },
+  {
+    "firstname": "obiora",
+    "lastname": "maduakor",
+    "email": "obiora.maduakor@gmail.com",
+    "photoUrl": "avatar.png",
+    "PhoneNumbers": [
+      {
+        "Number": "08012836475",
+        "Type": 1
+      },
+      {
+        "Number": "08011494750",
+        "Type": 2
+      }
+    ],
+    "Socials": [
+      {
+        "Link": "https://facebook.com/maduakor"
+      },
+      {
+        "Link": "https://linkedIn.com/maduakor"
+      }
+    ],
+    "Address": {
+      "Street": "7 Asajon Way, Sangotedo",
+      "City": "Ajah",
+      "State": "Lagos",
+      "Country": "Nigeria",
+      "AddressType": 0
+
+    }
+
+  }
+
+]
