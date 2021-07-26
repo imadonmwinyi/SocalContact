@@ -1,12 +1,19 @@
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
+using SocialContact.Core.Services.Abstraction;
+using SocialContact.Core.Services.Implementation;
 using SocialContact.Data;
+using SocialContact.Data.Models;
 
 namespace SocialContact
 {
@@ -23,8 +30,26 @@ namespace SocialContact
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContextPool<AppContext>(option => option.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<AppContext>().AddDefaultTokenProviders();
+            services.AddScoped<IEmailService, EmailService>();
 
-
+            services.AddAuthentication(option => {
+                option.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                option.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(option =>
+            {
+                option.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(Configuration.GetSection("JWTConfigurations:SecretKey").Value)),
+                    ValidateIssuer = true,
+                    ValidIssuer = Configuration.GetSection("JWTConfigurations:Issuer").Value,
+                    ValidateAudience = true,
+                    ValidAudience = Configuration.GetSection("JWTConfigurations:Audience").Value
+                };
+            });
+            services.AddSingleton<IEmailConfiguration>(Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>());
+            services.AddTransient<IEmailService, EmailService>();
             services.AddControllersWithViews();
 
             // In production, the React files will be served from this directory
@@ -60,6 +85,10 @@ namespace SocialContact
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
             });
+
+
+            PreSeeder.EnsurePopulated(app).Wait();
+
 
             app.UseSpa(spa =>
             {

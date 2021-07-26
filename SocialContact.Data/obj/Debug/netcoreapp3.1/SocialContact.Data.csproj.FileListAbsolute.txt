@@ -1,0 +1,12 @@
+C:\Users\hp\Desktop\ReactAPI\SocialContact\SocialContact.Data\bin\Debug\netcoreapp3.1\SocialContact.Data.deps.json
+C:\Users\hp\Desktop\ReactAPI\SocialContact\SocialContact.Data\bin\Debug\netcoreapp3.1\SocialContact.Data.runtimeconfig.json
+C:\Users\hp\Desktop\ReactAPI\SocialContact\SocialContact.Data\bin\Debug\netcoreapp3.1\SocialContact.Data.runtimeconfig.dev.json
+C:\Users\hp\Desktop\ReactAPI\SocialContact\SocialContact.Data\bin\Debug\netcoreapp3.1\SocialContact.Data.dll
+C:\Users\hp\Desktop\ReactAPI\SocialContact\SocialContact.Data\bin\Debug\netcoreapp3.1\SocialContact.Data.pdb
+C:\Users\hp\Desktop\ReactAPI\SocialContact\SocialContact.Data\obj\Debug\netcoreapp3.1\SocialContact.Data.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\ReactAPI\SocialContact\SocialContact.Data\obj\Debug\netcoreapp3.1\SocialContact.Data.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\ReactAPI\SocialContact\SocialContact.Data\obj\Debug\netcoreapp3.1\SocialContact.Data.AssemblyInfo.cs
+C:\Users\hp\Desktop\ReactAPI\SocialContact\SocialContact.Data\obj\Debug\netcoreapp3.1\SocialContact.Data.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\ReactAPI\SocialContact\SocialContact.Data\obj\Debug\netcoreapp3.1\SocialContact.Data.dll
+C:\Users\hp\Desktop\ReactAPI\SocialContact\SocialContact.Data\obj\Debug\netcoreapp3.1\SocialContact.Data.pdb
+C:\Users\hp\Desktop\ReactAPI\SocialContact\SocialContact.Data\obj\Debug\netcoreapp3.1\SocialContact.Data.genruntimeconfig.cache

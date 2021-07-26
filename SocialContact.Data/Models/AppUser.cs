@@ -18,7 +18,6 @@ namespace SocialContact.Data.Models
 
         public Address Address { get; set; }
 
-        public ICollection<Contact> Contacts { get; set; }
 
         public ICollection<PhoneNumber> PhoneNumbers { get; set; }
 
@@ -27,7 +26,6 @@ namespace SocialContact.Data.Models
 
         public AppUser()
         {
-            Contacts = new List<Contact>();
 
             PhoneNumbers = new List<PhoneNumber>();
 
